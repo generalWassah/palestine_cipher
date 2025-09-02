@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palestine Cipher</title>
+    <link rel="stylesheet" href="cipherPalestineStyle111.css">
+    <link rel="stylesheet" href="styles/cipherPalestineStyle.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Palestine Cipher</h1>
+        <nav>
+            <ul>
+                <li><a href="#encrypt-section">Encrypt</a></li>
+                <li><a href="#decrypt-section">Decrypt</a></li>
+                <li><a href="#key-generator">Key Generator</a></li>
+                <li><a href="https://palestineguard.w3spaces.com" target="_blank">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <main>
+        <section class="container" id="encrypt-section">
+            <h2>Encrypt / Decrypt</h2>
+            <label for="input">Input:</label>
+            <textarea id="input" placeholder="Enter plaintext"></textarea>
+            
+            <div id="diff-orbit-inputs" class="diff-orbit-inputs">
+        <div class="indexes">
+          <div id="_PILcontainer">
+            <label for='_PalestineIndexL' class='my-label'>PIL:</label>
+            <input id="_PalestineIndexL" class='orbit-Pal' type="number" min="0" value="0" />
+          </div>
+          <div id="_PIDcontainer">
+            <label for='_PalestineIndexD' class='my-label'>PID:</label>
+            <input id="_PalestineIndexD" class='orbit-Pal' type="number" min="0" value="0" />
+          </div>
+        </div>
+        <div class="indexes">
+          <div>
+            <label for='orbitIndexL' class='my-label'>OIL:</label>
+            <input id='orbitIndexL' class='orbit-Pal' type="number" min="1" value="1" />
+          </div>
+          <div>
+            <label for='orbitIndexD' class='my-label'>OID:</label>
+            <input id='orbitIndexD' class='orbit-Pal' type="number" min="1" value="1" />
+          </div>
+        </div>
+      </div>
+             
+            <label for="key">Key:</label>
+            <input type="text" id="key" placeholder="Enter the key">
+
+            <div class="buttons">
+                <button id="btnEnc" onclick="encryptText()">Encrypt</button>
+                <button id="btnDec" onclick="decryptText()">Decrypt</button>
+            </div>
+
+            <label for="output">Output:</label>
+            <textarea id="output" readonly></textarea>
+        </section>
+        
+        <section class="container" id="key-print">
+            <h2>View Effective Key</h2>
+            <button onclick="generatePalestineKey()">Print Palestine Key</button>
+            <textarea id="keyPalestineOutput" readonly></textarea>
+        </section>
+
+        <section class="container" id="key-generator">
+            <h2>Key Generator</h2>
+            <input id="genVigKeyInput" type="text" placeholder="Enter Vigenere Key">
+            <input id="keyLenL" type="number" min="1" placeholder="Key Length Letters">
+            <input id="keyLenD" type="number" min="1" placeholder="Key Length Digits">
+            <button onclick="generatePalestineKey()">Generate Palestine Key</button>
+            <textarea id="keyPalestineOutput" readonly></textarea>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Palestine Cipher. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts/myPalestine/myPalestine.js"></script>
+</body>
+</html>
