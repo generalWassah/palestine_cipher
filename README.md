@@ -27,13 +27,6 @@ Ciphertext achieves randomness with index of coincidence ≈ 1/26.
 
 Efficient design avoids large matrix computations.
 
-📊 Comparison
-Feature	Vigenère Cipher	Alpha (Palestine Key)	Beta (NEWS Diffusion)	Gamma (Alpha + Beta)
-Key Expansion	Periodic repetition	Non-periodic expansion	Repeated key	Non-periodic expansion
-Plaintext Diffusion	None	None	NEWS functions applied	NEWS functions applied
-Avalanche Effect	Weak	Moderate	Strong	Very Strong
-Resistance to Attack	Vulnerable to frequency analysis	Resistant to key length attacks	Resistant to frequency analysis	Resistant to both
-Randomness (IC)	High deviation from random	Closer to random	Closer to random	≈ 1/26 (near random)
 📖 Process
 
 Diffusion – Plaintext transformed with NEWS functions.
